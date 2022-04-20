@@ -8,7 +8,7 @@ export default class HideableText extends React.Component {
     };
   }
   toggleIsHidden(){
-      hello
+     return true
   }
   render() {
     return <div>{this.state.isHidden && this.props.text}</div>;
