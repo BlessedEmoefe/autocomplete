@@ -4,7 +4,7 @@ import HideableText from './HideableText';
 function App() {
   return (
     <div className="App">
-     <HideableText />
+     <HideableText text="dynamic texts!" />
     </div>
   );
 }
