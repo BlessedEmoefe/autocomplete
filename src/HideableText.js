@@ -8,6 +8,6 @@ export default class HideableText extends React.Component {
     };
   }
   render() {
-    return <div>{this.props.text}</div>;
+    return <div>{this.state.isHidden && this.props.text}</div>;
   }
 }
