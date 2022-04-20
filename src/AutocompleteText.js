@@ -8,7 +8,12 @@ export default class AutoCompletText extends React.Component {
   render() {
     return (
       <div>
-        <input type="text" />
+        <input
+          onChange={(e) => {
+            console.log(e.target.value);
+          }}
+          type="text"
+        />
         <ul>
           {this.items.map((item) => (
             <li>{item}</li>
