@@ -24,7 +24,6 @@ export default class AutoCompletText extends React.Component {
             <li>{item}</li>
             <li>{item}</li>
             <li>{item}</li>
-            <li>{item}</li>
           ))}
         </ul>
       </div>
