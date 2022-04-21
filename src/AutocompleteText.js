@@ -23,6 +23,7 @@ export default class AutoCompletText extends React.Component {
           {this.items.map((item) => (
             <li>{item}</li>
             <li>{item}</li>
+            <li>{item}</li>
           ))}
         </ul>
       </div>
