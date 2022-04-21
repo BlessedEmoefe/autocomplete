@@ -4,6 +4,9 @@ export default class AutoCompletText extends React.Component {
   constructor(props) {
     super(props);
     this.items = ["Blessed", "Daniel", "Peace", "Jackson"];
+    this.state={
+      suggestion:[]
+    }
   }
   render() {
     return (
