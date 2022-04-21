@@ -11,7 +11,7 @@ export default class AutoCompletText extends React.Component {
   onTextChanged = (e) => {
     const value = e.target.value
     if(value.length===0){
-      
+
     }
   };
 
@@ -21,6 +21,7 @@ export default class AutoCompletText extends React.Component {
         <input onChange={this.onTextChanged} type="text" />
         <ul>
           {this.items.map((item) => (
+            <li>{item}</li>
             <li>{item}</li>
           ))}
         </ul>
