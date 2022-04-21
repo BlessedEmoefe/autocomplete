@@ -4,19 +4,18 @@ export default class AutoCompletText extends React.Component {
   constructor(props) {
     super(props);
     this.items = ["Blessed", "Daniel", "Peace", "Jackson"];
-    this.state={
-      suggestion:[]
-    }
+    this.state = {
+      suggestion: [],
+    };
   }
+  onTextChanged = (e) => {
+    console.log(e.target.value);
+  };
+
   render() {
     return (
       <div>
-        <input
-          onChange={(e) => {
-            console.log(e.target.value);
-          }}
-          type="text"
-        />
+        <input onChange={this.onTextChanged} type="text" />
         <ul>
           {this.items.map((item) => (
             <li>{item}</li>
