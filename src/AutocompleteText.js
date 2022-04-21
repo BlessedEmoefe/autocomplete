@@ -9,7 +9,7 @@ export default class AutoCompletText extends React.Component {
     };
   }
   onTextChanged = (e) => {
-    console.log(e.target.value);
+    const value = e.target.value
   };
 
   render() {
